@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Downtime Report</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_study">newStudyActivity</string>
+    <string name="title_activity_reasons">reasonsActivity</string>
+    <string name="default_study_title">New Study</string>
+    <string name="title_activity_study">studyActivity</string>
+    <string name="title_activity_temp">tempActivity</string>
+    <string name="title_activity_start_downtime">startDowntimeActivity</string>
+    <string name="title_activity_stop_downtime">stopDowntime</string>
+    <string name="title_activity_pick_reason">pickReasonActivity</string>
+    <string name="title_activity_study_end">studyEndActivity</string>
+
+    <string name="downtime_reason_one"><u>Downtime Reason 1</u></string>
+    <string name="downtime_reason_two"><u>Downtime Reason 2</u></string>
+    <string name="downtime_reason_three"><u>Downtime Reason 3</u></string>
+    <string name="downtime_reason_four"><u>Downtime Reason 4</u></string>
+    <string name="downtime_reason_five"><u>Downtime Reason 5</u></string>
+    <string name="downtime_reason_six"><u>Downtime Reason 6</u></string>
+
+    <string name="start_downtime">Start Downtime \n Timer</string>
+    <string name="stop_downtime">Stop Downtime \n Timer</string>
+</resources>
