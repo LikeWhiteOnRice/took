@@ -129,6 +129,8 @@ public class pickReasonActivity extends AppCompatActivity {
         extras.putStringArray("DT_END", downtimeEnd);
         extras.putStringArray("DT_REASONS", downtimeReason);
 
+        reasonPicked = false;
+
         intent.putExtras(extras);
         startActivity(intent);
     }

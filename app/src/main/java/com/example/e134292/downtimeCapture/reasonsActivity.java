@@ -14,6 +14,7 @@ import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class reasonsActivity extends Activity {
 
@@ -70,22 +71,31 @@ public class reasonsActivity extends Activity {
     }
 
     public void startDowntime (View view) {
+
         EditText studyTitleET = (EditText) findViewById(R.id.studyTitleET);
         String studyTitleST = studyTitleET.getText().toString();
         studyTitle = studyTitleST;
 
-        Intent intent = new Intent(this, startDowntimeActivity.class);
-        Bundle extras = new Bundle();
-        extras.putString("STUDY_TITLE", studyTitle);
-        //extras.putInt("NUM_OF_REASONS", numofReasons);
-        extras.putInt("INDEX", index);
-        extras.putStringArray("REASONS", arrTemp);
-        extras.putStringArray("DT_START", downtimeStart);
-        extras.putStringArray("DT_END", downtimeEnd);
-        extras.putStringArray("DT_REASONS", downtimeReason);
+        if (studyTitle == null || studyTitle.isEmpty()) {
 
-        intent.putExtras(extras);
-        startActivity(intent);
+            Toast.makeText(getApplicationContext(),"Study Title Cannot Be Empty!",
+                                                    Toast.LENGTH_LONG).show();
+        }
+        else {
+
+            Intent intent = new Intent(this, startDowntimeActivity.class);
+            Bundle extras = new Bundle();
+            extras.putString("STUDY_TITLE", studyTitle);
+            //extras.putInt("NUM_OF_REASONS", numofReasons);
+            extras.putInt("INDEX", index);
+            extras.putStringArray("REASONS", arrTemp);
+            extras.putStringArray("DT_START", downtimeStart);
+            extras.putStringArray("DT_END", downtimeEnd);
+            extras.putStringArray("DT_REASONS", downtimeReason);
+
+            intent.putExtras(extras);
+            startActivity(intent);
+        }
     }
 
     private class MyListAdapter extends BaseAdapter{

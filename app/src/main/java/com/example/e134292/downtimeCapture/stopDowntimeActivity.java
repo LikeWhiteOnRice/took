@@ -42,6 +42,7 @@ public class stopDowntimeActivity extends AppCompatActivity {
         index = extras.getInt("INDEX");
 
         getSupportActionBar().setTitle(studyTitle);
+
         /*
         buttonTime = Calendar.getInstance();
 

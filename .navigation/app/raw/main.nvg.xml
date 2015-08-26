@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.e134292.downtimeCapture.reasonsActivity"/>
+      <point      
+        x = "232"      
+        y = "184"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.e134292.downtimeCapture.stopDowntimeActivity"/>
+      <point      
+        x = "1936"      
+        y = "1816"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.e134292.downtimeCapture.startDowntimeActivity"/>
+      <point      
+        x = "1332"      
+        y = "100"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.e134292.downtimeCapture.studyEndActivity"/>
+      <point      
+        x = "372"      
+        y = "1752"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.e134292.downtimeCapture.pickReasonActivity"/>
+      <point      
+        x = "2548"      
+        y = "116"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

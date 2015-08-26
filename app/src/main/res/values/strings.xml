@@ -13,13 +13,21 @@
     <string name="title_activity_pick_reason">pickReasonActivity</string>
     <string name="title_activity_study_end">studyEndActivity</string>
 
-    <string name="downtime_reason_one"><u>Downtime Reason 1</u></string>
-    <string name="downtime_reason_two"><u>Downtime Reason 2</u></string>
-    <string name="downtime_reason_three"><u>Downtime Reason 3</u></string>
-    <string name="downtime_reason_four"><u>Downtime Reason 4</u></string>
-    <string name="downtime_reason_five"><u>Downtime Reason 5</u></string>
-    <string name="downtime_reason_six"><u>Downtime Reason 6</u></string>
+    <string name="downtime_reason_one"><u>Downtime Reason 1:</u></string>
+    <string name="downtime_reason_two"><u>Downtime Reason 2:</u></string>
+    <string name="downtime_reason_three"><u>Downtime Reason 3:</u></string>
+    <string name="downtime_reason_four"><u>Downtime Reason 4:</u></string>
+    <string name="downtime_reason_five"><u>Downtime Reason 5:</u></string>
+    <string name="downtime_reason_six"><u>Downtime Reason 6:</u></string>
 
     <string name="start_downtime">Start Downtime \n Timer</string>
     <string name="stop_downtime">Stop Downtime \n Timer</string>
+    <string name="select_downtime_reason">Select Downtime Reason</string>
+    <string name="user_entered_reason">Use Entered Reason</string>
+    <string name="end_study">End Study</string>
+    <string name="error">Error</string>
+    <string name="enter_top_reasons">Enter Top Downtime Reasons</string>
+    <string name="start_study">Start Study</string>
+
+    <string name="study_title_hint">Enter Study Title</string>
 </resources>

@@ -15,7 +15,7 @@
         android:onClick="stopDowntime"
         android:background="#96000000"
         android:textColor="#FFFFFF"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <RelativeLayout
@@ -26,13 +26,13 @@
         <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="End Study"
+            android:text="@string/end_study"
             android:id="@+id/studyEnd"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:onClick="studyEnd"
             android:background="#FFFFFF"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
     </RelativeLayout>
 
 </LinearLayout>
