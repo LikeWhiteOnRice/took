@@ -1,5 +1,6 @@
 package com.example.e134292.downtimeCapture;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -62,6 +63,22 @@ public class studyEndActivity extends AppCompatActivity {
         final TextView changeIndex = (TextView) findViewById(R.id.startTime);
         changeIndex.setText("Your Lost Time Study is Located at:\n" + file);
 
+        Thread timerThread = new Thread() {
+            public void run() {
+                try {
+                    sleep(5000);
+                }
+                catch(InterruptedException e) {
+                    e.printStackTrace();
+                }
+                finally {
+                    Intent intent = new Intent(studyEndActivity.this, reasonsActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                }
+            }
+        };
+        timerThread.start();
 
 
     }

@@ -22,7 +22,7 @@
         android:id="@+id/dtButtonOne"
         android:layout_marginTop="10dp"
         android:onClick="buttonOnePress"
-        android:background="#FFFFFF" />
+        android:background="@drawable/button_background_style"/>
 
     <Button
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
         android:id="@+id/dtButtonTwo"
         android:layout_marginTop="10dp"
         android:onClick="buttonTwoPress"
-        android:background="#FFFFFF" />
+        android:background="@drawable/button_background_style" />
 
     <Button
         android:layout_width="match_parent"
@@ -38,7 +38,7 @@
         android:id="@+id/dtButtonThree"
         android:layout_marginTop="10dp"
         android:onClick="buttonThreePress"
-        android:background="#FFFFFF" />
+        android:background="@drawable/button_background_style" />
 
     <Button
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
         android:id="@+id/dtButtonFour"
         android:layout_marginTop="10dp"
         android:onClick="buttonFourPress"
-        android:background="#FFFFFF" />
+        android:background="@drawable/button_background_style" />
 
     <Button
         android:layout_width="match_parent"
@@ -54,7 +54,7 @@
         android:id="@+id/dtButtonFive"
         android:layout_marginTop="10dp"
         android:onClick="buttonFivePress"
-        android:background="#FFFFFF" />
+        android:background="@drawable/button_background_style" />
 
     <Button
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
         android:id="@+id/dtButtonSix"
         android:layout_marginTop="10dp"
         android:onClick="buttonSixPress"
-        android:background="#FFFFFF" />
+        android:background="@drawable/button_background_style" />
 
     <EditText
         android:layout_width="match_parent"
@@ -83,7 +83,7 @@
         android:id="@+id/doneButton"
         android:layout_gravity="center_horizontal"
         android:onClick="nextDowntime"
-        android:background="#FFFFFF"
+        android:background="@drawable/button_background_style"
         android:layout_marginTop="15dp"
         android:textSize="16dp" />
 

@@ -3,6 +3,7 @@ package com.example.e134292.downtimeCapture;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.SpannableString;
@@ -28,6 +29,8 @@ public class reasonsActivity extends Activity {
     private String[] downtimeReason = new String[500];
     private int index;
 
+    private EditText mStudyTitleET;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
@@ -41,6 +44,8 @@ public class reasonsActivity extends Activity {
         arrText[5] = getResources().getString(R.string.downtime_reason_six);
 
         setContentView(R.layout.lyt_listview_activity);
+
+        mStudyTitleET = (EditText) findViewById(R.id.studyTitleET);
 
         //Bundle extras = getIntent().getExtras();
         //studyTitle = extras.getString("STUDY_TITLE");
@@ -68,12 +73,13 @@ public class reasonsActivity extends Activity {
         MyListAdapter myListAdapter = new MyListAdapter();
         ListView listView = (ListView) findViewById(R.id.listViewMain);
         listView.setAdapter(myListAdapter);
+
+        mStudyTitleET.requestFocus();
     }
 
     public void startDowntime (View view) {
 
-        EditText studyTitleET = (EditText) findViewById(R.id.studyTitleET);
-        String studyTitleST = studyTitleET.getText().toString();
+        String studyTitleST = mStudyTitleET.getText().toString();
         studyTitle = studyTitleST;
 
         if (studyTitle == null || studyTitle.isEmpty()) {

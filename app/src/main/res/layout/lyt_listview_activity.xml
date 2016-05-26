@@ -7,7 +7,7 @@
     android:weightSum="1">
 
     <EditText
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/studyTitleET"
         android:layout_gravity="center_horizontal"
@@ -15,40 +15,37 @@
         android:imeOptions="actionDone"
         android:singleLine="true"
         android:textStyle="bold"
-        android:textSize="24sp"
+        android:textSize="25sp"
         android:background="@drawable/edit_text_style"
-        android:layout_marginTop="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingLeft="10dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textCursorDrawable="@null"
+        android:layout_margin="20dp"
+        android:padding="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enter_top_reasons"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
         android:id="@+id/studyTitleTV"
-        android:layout_gravity="center_horizontal"
         android:layout_below="@+id/studyTitleET"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
 
     <ListView
         android:id="@+id/listViewMain"
         android:layout_width="match_parent"
-        android:layout_height="247dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/studyTitleTV"
         android:layout_above="@+id/startButton"
-        android:layout_marginTop="10dp"
-        android:layout_weight="0.50">
-    </ListView>
+        android:layout_marginTop="10dp" />
 
     <Button
-        android:layout_width="175dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/start_study"
         android:id="@+id/startButton"
         android:layout_gravity="bottom|center_horizontal"
@@ -56,8 +53,10 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_marginBottom="15dp"
-        android:background="#FFFFFF" />
+        android:background="@drawable/button_background_style"
+        android:layout_marginTop="15dp"
+        android:padding="10dp" />
 
 </RelativeLayout>
