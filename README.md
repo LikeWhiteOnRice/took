@@ -1,12 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Study
-Work Project
-=======
-# Downtime-Study
-asd
->>>>>>> ebd37c41cd459b21cdda90d0ef25f3465fbe251d
-=======
-# took
-test
->>>>>>> ef8f8dce9b82becb17c4ddcfc8e1c5c0a17bb7d7
+Time Tracking App
+
+Used for donwtime capturing in industrial facilities.
+
+Enter the study name, top six downtime reasons and then start your study.
+When a downtime event starts, hit the start button and then select a reason, or enter one that isn't an option.
+When the event is over, hit the stop button and wait for the next event.
+
+Each event is saved to an excel spreadsheet with the time the event started, the reason, and the time that it stopped.
+When the study is over, the spreadsheet is saved to the device and ready to export to your PC.
